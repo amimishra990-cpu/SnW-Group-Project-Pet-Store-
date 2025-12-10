@@ -1,0 +1,27 @@
+/* Inheriting styles from Userid.css mostly */
+
+.signup-card {
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.signup-container {
+    /* Centering without the side image for signup to give more focus to the form */
+    justify-content: center;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .input-group {
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}

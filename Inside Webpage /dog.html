@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dog Products - PetShop</title>
+    <link rel="stylesheet" href="form.css" />
+    <style>
+        /* Specific overrides for grid view instead of carousel */
+        .product-grid-view {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 20px 0;
+        }
+
+        .product-card {
+            height: auto;
+            /* Allow auto height for grid */
+            flex: none;
+            /* Reset flex for grid */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navpar">
+            <img class="logos" src="/Images /logo (1).png" alt="" />
+            <nav>
+                <div class="NavBardetailMenu" id="NavDetailMenu">
+                    <a href="../index.html" class="Navdetail" id="Home">Home</a>
+                    <a href="/Inside Webpage /AboutUS.html" class="Navdetail" id="AboutUs">About Us</a>
+                    <a href="Support.html" class="Navdetail" id="ContactUs">Contact Us</a>
+                    <a href="/Inside Webpage /Category.html" class="Navdetail" id="Categories"> Categories</a>
+                </div>
+
+                <div class="SearchInputWrapper">
+                    <input class="SearchInput" type="text" placeholder="Search Items" />
+                    <span class="search-icon">
+                        <img class="searchbar" src="/Images /search bar .png" alt="">
+                    </span>
+                </div>
+                <a href="/Inside Webpage /Userid.html">
+                    <div class="user"></div>
+                </a>
+            </nav>
+        </div>
+
+        <div class="shop-container">
+            <div class="featured-hero" style="background: linear-gradient(135deg, #FF9A9E 0%, #FECFEF 100%);">
+                <div class="hero-content">
+                    <h1>Premium Dog Supplies</h1>
+                    <p>Everything your best friend needs.</p>
+                    <button class="hero-btn" style="background-color: #ff6b6b;">Shop For Dogs</button>
+                </div>
+                <img src="/Images /dogy.png" alt="Dog" class="hero-image">
+            </div>
+
+            <div class="category-row">
+                <h2 class="category-title">Dog Favorites (8 Items)</h2>
+                <div class="product-grid-view">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <img src="/Images /food.jpg" alt="Dog Food">
+                        <div class="product-info">
+                            <p class="product-name">Premium Dog Kibble (10kg) - Chicken Flavor</p>
+                            <div class="rating">⭐⭐⭐⭐⭐ <span class="count">(5,600)</span></div>
+                            <p class="price"><sup>₹</sup>2,499</p>
+                            <p class="delivery">FREE delivery <b>Tomorrow</b></p>
+                            <button class="add-btn">View Product</button>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <img src="/Images /Retractable Leash.jpg" alt="Leash">
+                        <div class="product-info">
+                            <p class="product-name">Heavy Duty Retractable Dog Leash</p>
+                            <div class="rating">⭐⭐⭐⭐☆ <span class="count">(1,200)</span></div>
+                            <p class="price"><sup>₹</sup>899</p>
+                            <p class="delivery">FREE delivery <b>Thu, Dec 7</b></p>
+                            <button class="add-btn">View Product</button>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <img src="/Images /Orthopedic Pet Bed.jpg" alt="Bed">
+                        <div class="product-info">
+                            <p class="product-name">Orthopedic Memory Foam Dog Bed (Large)</p>
+                            <div class="rating">⭐⭐⭐⭐⭐ <span class="count">(8,900)</span></div>
+                            <p class="price"><sup>₹</sup>2,999</p>
+                            <p class="delivery">FREE delivery <b>Tomorrow</b></p>
+                            <button class="add-btn">View Product</button>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <img src="/Images /Indestructible Ball.jpg" alt="Toy">
+                        <div class="product-info">
+                            <p class="product-name">Indestructible Rubber Ball Toy</p>
+                            <div class="rating">⭐⭐⭐⭐⭐ <span class="count">(5,000)</span></div>
+                            <p class="price"><sup>₹</sup>349</p>
+                            <p class="delivery">FREE delivery <b>Tomorrow</b></p>
+                            <button class="add-btn">View Product</button>
+                        </div>
+                    </div>
+                    <!-- Product 5 -->
+                    <div class="product-card">
+                        <img src="/Images /Stylish Pet Bandana Collar for Dogs, Black Pattern Dog Accessory, Unique Pet Gear, Gifts for Dog Lovers, Adjustable Dog Fashion.jpeg"
+                            alt="Bandana">
+                        <div class="product-info">
+                            <p class="product-name">Stylish Patterned Dog Bandana</p>
+                            <div class="rating">⭐⭐⭐⭐⭐ <span class="count">(3,400)</span></div>
+                            <p class="price"><sup>₹</sup>299</p>
+                            <p class="delivery">FREE delivery <b>Fri, Dec 8</b></p>
+                            <button class="add-btn">View Product</button>
+                        </div>
+                    </div>
+                    <!-- Product 6 -->
+                    <div class="product-card">
+                        <img src="/Images /cloth pet .png" alt="Hoodie">
+                        <div class="product-info">
+                            <p class="product-name">Cozy Winter Hoodie for Dogs</p>
+                            <div class="rating">⭐⭐⭐⭐⭐ <span class="count">(1,204)</span></div>
+                            <p class="price"><sup>₹</sup>999</p>
+                            <p class="delivery">FREE delivery <b>Mon, Dec 4</b></p>
+                            <button class="add-btn">View Product</button>
+                        </div>
+                    </div>
+                    <!-- Product 7 -->
+                    <div class="product-card">
+                        <img src="/Images /Non-Slip Steel Bowl.jpg" alt="Bowl">
+                        <div class="product-info">
+                            <p class="product-name">Non-Slip Stainless Steel Dog Bowl</p>
+                            <div class="rating">⭐⭐⭐⭐⭐ <span class="count">(1,500)</span></div>
+                            <p class="price"><sup>₹</sup>599</p>
+                            <p class="delivery">FREE delivery <b>Tue, Dec 5</b></p>
+                            <button class="add-btn">View Product</button>
+                        </div>
+                    </div>
+                    <!-- Product 8 -->
+                    <div class="product-card">
+                        <img src="/Images /Long-lasting Chew Bone.jpg" alt="Bone">
+                        <div class="product-info">
+                            <p class="product-name">Long-Lasting Dental Chew Bone</p>
+                            <div class="rating">⭐⭐⭐⭐⭐ <span class="count">(4,300)</span></div>
+                            <p class="price"><sup>₹</sup>249</p>
+                            <p class="delivery">FREE delivery <b>Tomorrow</b></p>
+                            <button class="add-btn">View Product</button>
+                        </div>
+                    </div>
+                    <!-- Product 9 -->
+                    <div class="product-card">
+                        <img src="/Images /food.jpg" alt="Shampoo">
+                        <div class="product-info">
+                            <p class="product-name">Gentle Dog Shampoo (Oatmeal)</p>
+                            <div class="rating">⭐⭐⭐⭐⭐ <span class="count">(2,100)</span></div>
+                            <p class="price"><sup>₹</sup>399</p>
+                            <p class="delivery">FREE delivery <b>Tomorrow</b></p>
+                            <button class="add-btn">View Product</button>
+                        </div>
+                    </div>
+                    <!-- Product 10 -->
+                    <div class="product-card">
+                        <img src="https://i.pinimg.com/1200x/e8/a7/a4/e8a7a476276f7705b8160f41cfb3d317.jpg" alt="Vest">
+                        <div class="product-info">
+                            <p class="product-name">Reflective Safety Vest</p>
+                            <div class="rating">⭐⭐⭐⭐☆ <span class="count">(850)</span></div>
+                            <p class="price"><sup>₹</sup>499</p>
+                            <p class="delivery">FREE delivery <b>Wed, Dec 6</b></p>
+                            <button class="add-btn">View Product</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
+</body>
+
+</html>

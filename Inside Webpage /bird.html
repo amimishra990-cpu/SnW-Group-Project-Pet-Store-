@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bird Products - PetShop</title>
+    <link rel="stylesheet" href="form.css" />
+    <style>
+        .product-grid-view {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 20px 0;
+        }
+
+        .product-card {
+            height: auto;
+            flex: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navpar">
+            <img class="logos" src="/Images /logo (1).png" alt="" />
+            <nav>
+                <div class="NavBardetailMenu" id="NavDetailMenu">
+                    <a href="../index.html" class="Navdetail" id="Home">Home</a>
+                    <a href="/Inside Webpage /AboutUS.html" class="Navdetail" id="AboutUs">About Us</a>
+                    <a href="Support.html" class="Navdetail" id="ContactUs">Contact Us</a>
+                    <a href="/Inside Webpage /Category.html" class="Navdetail" id="Categories"> Categories</a>
+                </div>
+
+                <div class="SearchInputWrapper">
+                    <input class="SearchInput" type="text" placeholder="Search Items" />
+                    <span class="search-icon">
+                        <img class="searchbar" src="/Images /search bar .png" alt="">
+                    </span>
+                </div>
+                <a href="/Inside Webpage /Userid.html">
+                    <div class="user"></div>
+                </a>
+            </nav>
+        </div>
+
+        <div class="shop-container">
+            <div class="featured-hero" style="background: linear-gradient(135deg, #FFDEE9 0%, #B5FFFC 100%);">
+                <div class="hero-content">
+                    <h1>Feathered Friends</h1>
+                    <p>Treats and toys for happy birds.</p>
+                    <button class="hero-btn" style="background-color: #74b9ff;">Shop For Birds</button>
+                </div>
+                <img src="/Images /birdpng .png" alt="Bird" class="hero-image">
+            </div>
+
+            <div class="category-row">
+                <h2 class="category-title">Bird Supplies (8 Items)</h2>
+                <div class="product-grid-view">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <img src="https://i.pinimg.com/1200x/4c/1a/87/4c1a87dc29d7ca48265e460ed1e3bd59.jpg" alt="Seeds">
+                        <div class="product-info">
+                            <p class="product-name">Premium Bird Seed Mix (1kg)</p>
+                            <div class="rating">⭐⭐⭐⭐⭐ <span class="count">(1,300)</span></div>
+                            <p class="price"><sup>₹</sup>499</p>
+                            <p class="delivery">FREE delivery <b>Tomorrow</b></p>
+                            <button class="add-btn">View Product</button>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <img src="https://i.pinimg.com/736x/2b/88/17/2b8817cfb2a1ad67e07ed87921ec8b09.jpg" alt="Cage">
+                        <div class="product-info">
+                            <p class="product-name">Spacious Bird Cage with Stand</p>
+                            <div class="rating">⭐⭐⭐⭐☆ <span class="count">(450)</span></div>
+                            <p class="price"><sup>₹</sup>2,999</p>
+                            <p class="delivery">FREE delivery <b>Sat, Dec 9</b></p>
+                            <button class="add-btn">View Product</button>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <img src="https://i.pinimg.com/1200x/e7/13/95/e71395069ef13aaad516289d5c905201.jpg" alt="Swing">
+                        <div class="product-info">
+                            <p class="product-name">Wooden Bird Swing Toy</p>
+                            <div class="rating">⭐⭐⭐⭐⭐ <span class="count">(800)</span></div>
+                            <p class="price"><sup>₹</sup>199</p>
+                            <p class="delivery">FREE delivery <b>Tomorrow</b></p>
+                            <button class="add-btn">View Product</button>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <img src="https://i.pinimg.com/1200x/50/2e/3c/502e3c27e04d1481c93888fbc1293f29.jpg" alt="Feeder">
+                        <div class="product-info">
+                            <p class="product-name">Automatic Bird Feeder</p>
+                            <div class="rating">⭐⭐⭐⭐⭐ <span class="count">(600)</span></div>
+                            <p class="price"><sup>₹</sup>349</p>
+                            <p class="delivery">FREE delivery <b>Wed, Dec 6</b></p>
+                            <button class="add-btn">View Product</button>
+                        </div>
+                    </div>
+                    <!-- Product 5 -->
+                    <div class="product-card">
+                        <img src="https://i.pinimg.com/1200x/f2/fc/62/f2fc62b3aa815f6482ef965300285b41.jpg" alt="Cuttlebone">
+                        <div class="product-info">
+                            <p class="product-name">Calcium Cuttlebone (Pack of 2)</p>
+                            <div class="rating">⭐⭐⭐⭐☆ <span class="count">(1,100)</span></div>
+                            <p class="price"><sup>₹</sup>149</p>
+                            <p class="delivery">FREE delivery <b>Tomorrow</b></p>
+                            <button class="add-btn">View Product</button>
+                        </div>
+                    </div>
+                    <!-- Product 6 -->
+                    <div class="product-card">
+                        <img src="https://i.pinimg.com/1200x/fa/9a/5c/fa9a5c234c1b64e3495f9f1181984240.jpg" alt="Ladder">
+                        <div class="product-info">
+                            <p class="product-name">Colorful Climbing Ladder</p>
+                            <div class="rating">⭐⭐⭐⭐⭐ <span class="count">(950)</span></div>
+                            <p class="price"><sup>₹</sup>249</p>
+                            <p class="delivery">FREE delivery <b>Tomorrow</b></p>
+                            <button class="add-btn">View Product</button>
+                        </div>
+                    </div>
+                    <!-- Product 7 -->
+                    <div class="product-card">
+                        <img src="https://i.pinimg.com/736x/fb/a5/20/fba52006affe7ee175b1d5b6a468696c.jpg" alt="Bath">
+                        <div class="product-info">
+                            <p class="product-name">Bird Bath Tub Attachment</p>
+                            <div class="rating">⭐⭐⭐⭐☆ <span class="count">(300)</span></div>
+                            <p class="price"><sup>₹</sup>399</p>
+                            <p class="delivery">FREE delivery <b>Fri, Dec 8</b></p>
+                            <button class="add-btn">View Product</button>
+                        </div>
+                    </div>
+                    <!-- Product 8 -->
+                    <div class="product-card">
+                        <img src="https://i.pinimg.com/1200x/3b/69/5c/3b695cbad35a4c46c91fd8e1c2cacbf3.jpg" alt="Perch">
+                        <div class="product-info">
+                            <p class="product-name">Natural Wood Perch</p>
+                            <div class="rating">⭐⭐⭐⭐⭐ <span class="count">(500)</span></div>
+                            <p class="price"><sup>₹</sup>199</p>
+                            <p class="delivery">FREE delivery <b>Tomorrow</b></p>
+                            <button class="add-btn">View Product</button>
+                        </div>
+                    </div>
+                    <!-- Product 9 -->
+                    <div class="product-card">
+                        <img src="https://i.pinimg.com/1200x/70/7f/3f/707f3f47dfc2d1c94e1f433f25c0d2f8.jpg" alt="Mirror">
+                        <div class="product-info">
+                            <p class="product-name">Bird Cage Mirror Toy</p>
+                            <div class="rating">⭐⭐⭐⭐☆ <span class="count">(800)</span></div>
+                            <p class="price"><sup>₹</sup>149</p>
+                            <p class="delivery">FREE delivery <b>Tomorrow</b></p>
+                            <button class="add-btn">View Product</button>
+                        </div>
+                    </div>
+                    <!-- Product 10 -->
+                    <div class="product-card">
+                        <img src="https://i.pinimg.com/1200x/fc/8d/39/fc8d391f577644bc2b7bf5e94dc0a046.jpg" alt="Millet">
+                        <div class="product-info">
+                            <p class="product-name">Golden Millet Spray (250g)</p>
+                            <div class="rating">⭐⭐⭐⭐⭐ <span class="count">(1,200)</span></div>
+                            <p class="price"><sup>₹</sup>249</p>
+                            <p class="delivery">FREE delivery <b>Thu, Dec 7</b></p>
+                            <button class="add-btn">View Product</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
+</body>
+
+</html>

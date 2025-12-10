@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetShop - Login</title>
+    <link rel="stylesheet" href="AboutUS.css" />
+    <link rel="stylesheet" href="Userid.css" />
+</head>
+
+<body>
+    <header>
+        <div class="navpar">
+            <img class="logos" src="/Images /logo (1).png" alt="" />
+            <nav>
+                <div class="NavBardetailMenu" id="NavDetailMenu">
+                    <a href="../index.html" class="Navdetail" id="Home">Home</a>
+                    <a href="/Inside Webpage /AboutUS.html" class="Navdetail" id="AboutUs">About Us</a>
+                    <a href="Support.html" class="Navdetail" id="ContactUs">Contact Us</a>
+                    <a href="/Inside Webpage /Category.html" class="Navdetail" id="Categories"> Categories</a>
+                </div>
+
+                <div class="SearchInputWrapper">
+                    <input class="SearchInput" type="text" placeholder="Search Items" />
+                    <span class="search-icon">
+                        <img class="searchbar" src="/Images /search bar .png" alt="">
+                    </span>
+                </div>
+                <div class="user"><a href="/Inside Webpage /Userid.html"></a></div>
+            </nav>
+        </div>
+
+        <div class="shop-container login-container">
+            <div class="login-card">
+                <h1>Welcome Back!</h1>
+                <p>Please login to your account</p>
+
+                <form class="login-form">
+                    <div class="input-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" placeholder="Enter your username" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                    </div>
+
+                    <button type="submit" class="submit-btn"
+                        onclick="event.preventDefault(); window.location.href='/Website Code /PetShop.html'">Login</button>
+
+                </form>
+
+                <div class="login-footer">
+                    <p>New to PetShop? <a href="newid.html" class="create-account-link">Create an Account</a></p>
+                </div>
+            </div>
+
+            <div class="login-hero-image">
+
+                <img src="/Images /logo (1).png" alt="PetShop Dog" class="hero-dog-img">
+            </div>
+        </div>
+
+    </header>
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
+</body>
+
+</html>

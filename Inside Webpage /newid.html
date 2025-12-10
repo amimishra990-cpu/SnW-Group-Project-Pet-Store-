@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetShop - Create Account</title>
+
+    <link rel="stylesheet" href="AboutUS.css" />
+
+    <link rel="stylesheet" href="Userid.css" />
+
+    <link rel="stylesheet" href="newid.css" />
+</head>
+
+<body>
+    <header>
+        <div class="navpar">
+            <img class="logos" src="/Images /logo (1).png" alt="" />
+            <nav>
+                <div class="NavBardetailMenu" id="NavDetailMenu">
+                    <a href="../index.html" class="Navdetail" id="Home">Home</a>
+                    <a href="/Inside Webpage /AboutUS.html" class="Navdetail" id="AboutUs">About Us</a>
+                    <a href="Support.html" class="Navdetail" id="ContactUs">Contact Us</a>
+                    <a href="/Inside Webpage /Category.html" class="Navdetail" id="Categories"> Categories</a>
+                </div>
+
+                <div class="SearchInputWrapper">
+                    <input class="SearchInput" type="text" placeholder="Search Items" />
+                    <span class="search-icon">
+                        <img class="searchbar" src="/Images /search bar .png" alt="">
+                    </span>
+                </div>
+                <a href="/Inside Webpage /Userid.html">
+                    <div class="user"></div>
+                </a>
+
+            </nav>
+        </div>
+
+        <div class="shop-container login-container signup-container">
+            <div class="login-card signup-card">
+                <h1>Join the Family!</h1>
+                <p>Create your new account</p>
+
+                <form class="login-form">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" placeholder="John Doe" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="userid">User ID</label>
+                            <input type="text" id="userid" placeholder="johndoe123" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="john@example.com" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="+91 7567XX8900">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="********" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" id="confirm-password" placeholder="********" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn"
+                        onclick="event.preventDefault(); window.location.href='Userid.html'">Sign Up</button>
+                    <!-- Simulated signup action redirecting to login -->
+                </form>
+
+                <div class="login-footer">
+                    <p>Already have an account? <a href="Userid.html" class="create-account-link">Login here</a></p>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
+</body>
+
+</html>

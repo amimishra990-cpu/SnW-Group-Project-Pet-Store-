@@ -1,0 +1,97 @@
+
+header{
+    height:720px;
+}
+.support-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    min-height: 600px;
+}
+
+.support-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.support-header h1 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 48px;
+    color: #006064;
+    margin-bottom: 15px;
+}
+
+.support-header p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #555;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    gap: 50px;
+}
+
+.contact-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info-item h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    color: #00838f;
+    margin-bottom: 10px;
+}
+
+.info-item p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-form {
+    flex: 1.5;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+    }
+}
