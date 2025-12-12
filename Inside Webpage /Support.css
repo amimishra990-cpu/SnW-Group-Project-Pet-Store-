@@ -1,12 +1,14 @@
 
 header{
-    height:720px;
+    height:auto;
+    min-height:100vh;
+    padding-bottom:32px;
 }
 .support-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px;
+    padding: clamp(24px, 4vw, 60px);
     min-height: 600px;
 }
 
@@ -17,7 +19,7 @@ header{
 
 .support-header h1 {
     font-family: 'Luckiest Guy', cursive;
-    font-size: 48px;
+    font-size: clamp(32px, 6vw, 48px);
     color: #006064;
     margin-bottom: 15px;
 }
@@ -30,14 +32,15 @@ header{
 
 .contact-wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     max-width: 1000px;
-    gap: 50px;
+    gap: 32px;
 }
 
 .contact-info {
-    flex: 1;
+    flex: 1 1 260px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -57,7 +60,7 @@ header{
 }
 
 .contact-form {
-    flex: 1.5;
+    flex: 1 1 320px;
     background: rgba(255, 255, 255, 0.8);
     padding: 30px;
     border-radius: 20px;
@@ -90,8 +93,16 @@ header{
 
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .contact-wrapper {
         flex-direction: column;
+    }
+}
+@media (max-width: 540px) {
+    .support-container {
+        padding: 20px;
+    }
+    .support-header p {
+        font-size: 16px;
     }
 }

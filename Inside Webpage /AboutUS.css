@@ -22,23 +22,25 @@ body {
 }
 
 header {
-  width: 1660px;
-  max-width: 1690px;
-  height: 1710px;
+  width: 95%;
+  max-width: 1600px;
+  min-height: 100vh;
+  height: auto;
   background-color: #5ce1e6;
-  margin: auto;
-  border-radius: 50px;
+  margin: 20px auto;
+  border-radius: 30px;
+  padding-bottom: 40px;
+  overflow: hidden;
 }
 
 .navpar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 40px;
- 
+  gap: 16px;
+  padding: 16px 24px;
   background: rgba(255, 255, 255, 0.1);
-
-
   border-radius: 20px;
   margin: 20px;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
@@ -46,7 +48,7 @@ header {
 }
 
 .logos {
-  height: 250px;
+  height: 200px;
   width: auto;
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
   transition: transform 0.3s ease;
@@ -72,15 +74,18 @@ header {
 
 nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   flex-grow: 0.5;
   justify-content: flex-end;
+  width: 100%;
 }
 
 .NavBardetailMenu {
   display: flex;
-  gap: 30px;
+  gap: 16px;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -115,8 +120,8 @@ nav {
 
 .SearchInputWrapper {
   position: relative;
-  width: 250px;
-  margin-left: 20px;
+  width: min(320px, 100%);
+  margin-left: 0;
 }
 
 .SearchInput {
@@ -253,11 +258,13 @@ nav div input {
 
 .featured-hero {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  gap: 32px;
   background: linear-gradient(135deg, #e0f7fa 0%, #80deea 100%);
   border-radius: 20px;
-  padding: 40px 60px;
+  padding: 32px 40px;
   margin-bottom: 60px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -271,7 +278,7 @@ nav div input {
 
 .hero-content h1 {
   font-family: 'Luckiest Guy', cursive;
-  font-size: 64px;
+  font-size: clamp(40px, 6vw, 64px);
   color: #006064;
   margin-bottom: 10px;
   line-height: 1.1;
@@ -279,7 +286,7 @@ nav div input {
 
 .hero-content p {
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   color: #00838f;
   margin-bottom: 30px;
 }
@@ -304,7 +311,7 @@ nav div input {
 }
 
 .hero-image {
-  width: 400px;
+  width: clamp(240px, 40vw, 420px);
   height: auto;
   filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.2));
   animation: float 6s ease-in-out infinite;
@@ -328,7 +335,7 @@ nav div input {
 }
 
 .product-card {
-  flex: 0 0 280px;
+  flex: 0 0 min(80vw, 280px);
   /* Fixed width for carousel items */
   scroll-snap-align: start;
   background: white;
@@ -589,4 +596,71 @@ nav div input {
     color: #555;
     line-height: 1.8;
     margin: 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 1200px) {
+  header {
+    width: 98%;
+    margin: 10px auto;
+  }
+  .logos {
+    height: 150px;
+  }
+  .featured-hero {
+    padding: 28px 32px;
+  }
+}
+
+@media (max-width: 992px) {
+  nav {
+    gap: 16px;
+  }
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .featured-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .navpar {
+    padding: 14px 16px;
+  }
+  .Navdetail {
+    font-size: 16px;
+  }
+  .shop-container {
+    padding: 16px;
+  }
+  .category-title {
+    font-size: 26px;
+  }
+  .hero-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  .logos {
+    height: 110px;
+  }
+  nav {
+    gap: 12px;
+  }
+  .NavBardetailMenu {
+    gap: 12px;
+  }
+  .product-card {
+    flex: 0 0 90vw;
+  }
+  .hero-content h1 {
+    font-size: 32px;
+  }
+  .hero-content p {
+    font-size: 16px;
+  }
 }
