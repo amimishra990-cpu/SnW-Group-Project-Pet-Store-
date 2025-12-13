@@ -48,4 +48,4 @@ SnW-Group-Project-Pet-Store-/
 
 ## Contributing
 We welcome improvements and enhancements! Feel free to open issues or submit pull requests.  
-Please keep the project HTML/CSS-only to ensure each page remains lightweight and easy to open directly in a browser.
+Please keep the project HTML/CSS-only to ensure each page remains lightweight and easy to open directly in a browser.# SNW-Group-Project
